@@ -1,19 +1,21 @@
-package com.plat.security.user;
+package com.plat.security.model;
 
 
+import com.plat.security.user.Role;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 import java.util.Collection;
 import java.util.List;
 
-@Data
+@Getter
+@Setter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
@@ -24,9 +26,20 @@ public class User implements UserDetails {
     @Id
     @GeneratedValue
     private Integer id;
+
+    @NotBlank
     private String first_name;
+
+    @NotBlank
     private String last_name;
+
+    @NotBlank
+    @Email
+    @Column(unique = true)
     private String email;
+
+    @NotBlank
+    @Size(min = 6)
     private String password;
 
     @Enumerated(EnumType.STRING)

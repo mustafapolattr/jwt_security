@@ -3,7 +3,7 @@ package com.plat.security.auth;
 
 import com.plat.security.config.JwtService;
 import com.plat.security.user.Role;
-import com.plat.security.user.User;
+import com.plat.security.model.User;
 import com.plat.security.user.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
