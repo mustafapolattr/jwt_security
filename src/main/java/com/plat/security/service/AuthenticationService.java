@@ -1,10 +1,12 @@
-package com.plat.security.auth;
+package com.plat.security.service;
 
 
-import com.plat.security.config.JwtService;
-import com.plat.security.user.Role;
+import com.plat.security.model.AuthenticationRequest;
+import com.plat.security.model.AuthenticationResponse;
+import com.plat.security.model.RegisterRequest;
+import com.plat.security.utils.Role;
 import com.plat.security.model.User;
-import com.plat.security.user.UserRepository;
+import com.plat.security.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

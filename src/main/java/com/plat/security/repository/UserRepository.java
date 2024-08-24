@@ -1,4 +1,4 @@
-package com.plat.security.user;
+package com.plat.security.repository;
 
 import com.plat.security.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;

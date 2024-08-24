@@ -1,4 +1,4 @@
-package com.plat.security.auth;
+package com.plat.security.model;
 
 
 import lombok.AllArgsConstructor;

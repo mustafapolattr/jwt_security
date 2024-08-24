@@ -1,4 +1,4 @@
-package com.plat.security.user;
+package com.plat.security.utils;
 
 public enum Role {
     USER,

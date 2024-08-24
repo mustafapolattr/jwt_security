@@ -1,7 +1,7 @@
 package com.plat.security.model;
 
 
-import com.plat.security.user.Role;
+import com.plat.security.utils.Role;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.security.core.GrantedAuthority;

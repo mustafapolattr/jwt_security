@@ -1,6 +1,10 @@
-package com.plat.security.auth;
+package com.plat.security.controller;
 
 
+import com.plat.security.model.AuthenticationRequest;
+import com.plat.security.model.AuthenticationResponse;
+import com.plat.security.service.AuthenticationService;
+import com.plat.security.model.RegisterRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

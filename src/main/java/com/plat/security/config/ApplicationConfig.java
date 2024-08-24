@@ -1,7 +1,7 @@
 package com.plat.security.config;
 
 
-import com.plat.security.user.UserRepository;
+import com.plat.security.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
